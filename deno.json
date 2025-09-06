@@ -1,0 +1,7 @@
+{
+  "tasks": {
+    "start": "deno run --allow-net --allow-env npm:supabase",
+    "serve:functions": "deno run --watch --allow-net --allow-env npm:supabase functions serve --env-file ./supabase/.env.local"
+  },
+  "importMap": "./supabase/functions/import_map.json"
+}

@@ -21,7 +21,6 @@ EXECUTE FUNCTION public.update_updated_at_column();
 
 -- Seed static admin account for development/demo
 INSERT INTO public.admins (username, password, role, is_active)
-VALUES ('AdminCP', 'admin123456', 'admin', true)
 ON CONFLICT (username) DO NOTHING;
 
 -- Function: Create citizen account securely, bypassing client-side RLS limitations
